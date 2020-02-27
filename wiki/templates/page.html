@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="row">
+    <div class="col m-4">
+      <h3>{{ page.title }} <small class="text-muted">Last updated {{ page.modified|date:"SHORT_DATETIME_FORMAT" }} by <b>{{ page.author.username }}</b></small></h3>
+      <hr>
+      <p>{{ page.content|linebreaksbr }}</p>
+      <hr>
+      <a href="{% url 'wiki-list-page' %}">Back to List</a>
+    </div>
+  </div>
+{% endblock %}
