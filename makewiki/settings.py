@@ -25,8 +25,8 @@ SECRET_KEY = 'lmaowhatasecretkey'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '0.0.0.0', 'localhost',
-                 'gf-makewikiv2.herokuapp.com', '*']  # lmao do not use * in production
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost',
+                 'wikisitetyler.herokuapp.com']  
 
 
 # Application definition
